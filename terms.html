@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automation Terms</title>
+<style>
+  :root{
+    --bg:#f7f5f0;
+    --surface:#ffffff;
+    --text:#1a201d;
+    --text-muted:#5c665f;
+    --accent:#b8791e;
+    --accent-soft:#f0dfc4;
+    --rule:#ddd6c8;
+    --mono-bg:#efe9dc;
+    --mono-text:#3d4740;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#121612;
+      --surface:#181d18;
+      --text:#eae7df;
+      --text-muted:#a2aaa3;
+      --accent:#e3a55c;
+      --accent-soft:#3a2e18;
+      --rule:#2b322c;
+      --mono-bg:#1e2420;
+      --mono-text:#c7cdc6;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#121612;
+    --surface:#181d18;
+    --text:#eae7df;
+    --text-muted:#a2aaa3;
+    --accent:#e3a55c;
+    --accent-soft:#3a2e18;
+    --rule:#2b322c;
+    --mono-bg:#1e2420;
+    --mono-text:#c7cdc6;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:680px;
+    margin:0 auto;
+    padding:64px 24px 96px;
+  }
+  .kicker{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:12.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 18px;
+  }
+  h1{
+    font-family:'Fraunces', Georgia, serif;
+    font-weight:600;
+    font-size:clamp(2rem, 5vw, 2.75rem);
+    line-height:1.08;
+    letter-spacing:-0.01em;
+    margin:0 0 8px;
+    text-wrap:balance;
+  }
+  .subtitle{
+    color:var(--text-muted);
+    font-size:1.05rem;
+    margin:0 0 40px;
+    max-width:52ch;
+  }
+  .meta{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--text-muted);
+    padding:14px 0;
+    border-top:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+    margin-bottom:44px;
+  }
+  .meta span b{color:var(--text);font-weight:600;}
+
+  section{margin-bottom:38px;}
+  h2{
+    font-family:'Fraunces', Georgia, serif;
+    font-style:italic;
+    font-weight:500;
+    font-size:1.3rem;
+    margin:0 0 12px;
+    color:var(--text);
+  }
+  p{
+    font-size:1rem;
+    line-height:1.7;
+    color:var(--text);
+    margin:0 0 14px;
+    max-width:64ch;
+  }
+  p.muted{color:var(--text-muted);}
+  ul{margin:0 0 14px; padding-left:1.2em;}
+  li{font-size:1rem; line-height:1.7; margin-bottom:6px; max-width:60ch;}
+
+  .chip-row{display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 6px;}
+  .chip{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    background:var(--mono-bg);
+    color:var(--mono-text);
+    padding:5px 10px;
+    border-radius:5px;
+    border:1px solid var(--rule);
+  }
+
+  .callout{
+    background:var(--accent-soft);
+    border-left:3px solid var(--accent);
+    padding:14px 18px;
+    border-radius:2px;
+    margin:20px 0;
+  }
+  .callout p{margin:0; color:var(--text);}
+
+  footer{
+    margin-top:56px;
+    padding-top:24px;
+    border-top:1px solid var(--rule);
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--text-muted);
+  }
+  a{color:var(--accent);}
+
+  @media (max-width:520px){
+    .wrap{padding:44px 18px 72px;}
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">yl_imagination_squad · automation docs</p>
+  <h1>Terms of Service</h1>
+  <p class="subtitle">Terms for the automated publishing tool that posts photography-education content to the Instagram and TikTok accounts operated under the handle <strong>@yl_imagination_squad</strong>.</p>
+
+  <div class="meta">
+    <span>Operator: <b>Yerik Linares</b></span>
+    <span>Effective: <b>September 5, 2026</b></span>
+    <span>Contact: <b>yeriklinares@gmail.com</b></span>
+  </div>
+
+  <section>
+    <h2>What this is</h2>
+    <p><strong>YL Imagination Squad Automation</strong> ("the automation," "we," "this app") is a personal, single-operator tool built by Yerik Linares. It generates short photography-education posts (image carousels and short videos) and publishes them, on a fixed schedule, to accounts the operator owns and controls: the Instagram Business account and the TikTok account both known publicly as <strong>@yl_imagination_squad</strong>.</p>
+    <p>It is not a public product, is not offered to other users, and does not accept sign-ups. The only account it acts on is the operator's own.</p>
+  </section>
+
+  <section>
+    <h2>What it does with the TikTok API</h2>
+    <p>The automation uses TikTok's Content Posting API, through the following scopes, solely to publish the operator's own generated videos to the operator's own TikTok account:</p>
+    <div class="chip-row">
+      <span class="chip">user.info.basic</span>
+      <span class="chip">video.upload</span>
+      <span class="chip">video.publish</span>
+    </div>
+    <p>No content is posted on behalf of, or read from, any TikTok account other than the operator's own.</p>
+  </section>
+
+  <section>
+    <h2>Content and ownership</h2>
+    <p>All posted material (images, captions, video) is generated specifically for this account, either hand-authored or produced with AI image/video generation tools, and is owned by the operator. The automation does not repost, scrape, or redistribute other creators' content.</p>
+  </section>
+
+  <section>
+    <h2>No warranty</h2>
+    <p>This is a small, personal automation, run on a best-effort basis. It is provided "as is," without guarantee of uptime, posting frequency, or platform availability. Publishing may pause or fail (for example, during platform outages, rate limits, or maintenance) without prior notice.</p>
+  </section>
+
+  <div class="callout">
+    <p><strong>Independence notice:</strong> this tool is independently operated and is not endorsed by, certified by, or affiliated with TikTok Inc., ByteDance Ltd., Meta Platforms, Inc., or Instagram.</p>
+  </div>
+
+  <section>
+    <h2>Changes to these terms</h2>
+    <p>These terms may be updated as the automation's scope changes (for example, if new platforms or posting formats are added). The effective date above reflects the latest revision.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this tool or its use of platform APIs can be sent to <a href="mailto:yeriklinares@gmail.com">yeriklinares@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <span>YL Imagination Squad Automation</span>
+    <span>Terms of Service · v1.0</span>
+  </footer>
+</div>
+</body>
+</html>
